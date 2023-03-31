@@ -1,0 +1,20 @@
+{
+  "enablePasswordEncryption": false,
+  "showTransactionConfirmationScreen": false,
+  "factory_address": "0x49181c7C537aC03DE7aE63690bCEBc5Fd14fF469",
+  "eleptic_curve": "0xe480756e382a1e898C996A572E51b6E096283036",
+  "network": {
+    "chainID": "5",
+    "family": "EVM",
+    "name": "Goerli",
+    "provider": "https://goerli.infura.io/v3/bdabe9d2f9244005af0f566398e648da",
+    "entryPointAddress": "0x0576a174D229E3cFA37253523E645A78A0C91B57",
+    "bundler": "http://localhost:9000/rpc",
+    "baseAsset": {
+      "symbol": "ETH",
+      "name": "ETH",
+      "decimals": 18,
+      "image": "https://ethereum.org/static/6b935ac0e6194247347855dc3d328e83/6ed5f/eth-diamond-black.webp"
+    }
+  }
+}

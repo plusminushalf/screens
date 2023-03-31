@@ -1,0 +1,3 @@
+import SecuredTransactions from './secured-transactions'
+
+export default SecuredTransactions

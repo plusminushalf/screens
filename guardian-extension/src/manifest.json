@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Screen connect",
+  "description": "Screen co-sign every transaction after checking transactions for frauds & helps in recovery of account in case your key gets compromised.",
+  "options_page": "options.html",
+  "background": { "service_worker": "ex_background.bundle.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-34.png"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["ex_contentScript.bundle.js"]
+    }
+  ],
+  "externally_connectable": {
+    "matches": ["http://localhost:3000/*"]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icon-128.png", "icon-34.png"],
+      "matches": []
+    },
+    {
+      "resources": ["ex_injectScript.bundle.js"],
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"]
+    }
+  ]
+}
